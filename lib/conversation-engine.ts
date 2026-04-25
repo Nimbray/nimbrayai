@@ -70,6 +70,8 @@ export function conversationGuidance(intent: ConversationIntent, mode: ResponseM
     "Adapte automatiquement la longueur : court pour une question simple, détaillé pour une tâche complexe.",
     "N’affiche jamais le contexte interne brut.",
     "Évite les phrases génériques si tu peux produire un résultat utile.",
+    "V71 : privilégie une voix naturelle, non répétitive, avec une seule relance maximum quand le sujet est personnel.",
+    "V71 : respecte strictement les demandes de silence, d’arrêt ou de réponse courte.",
     "Ne demande pas de précision si tu peux produire une première version raisonnable.",
     "Utilise les sources seulement pour améliorer la réponse finale.",
     "Si les sources sont faibles ou absentes, indique-le simplement sans bloquer.",

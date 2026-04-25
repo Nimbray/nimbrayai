@@ -10,6 +10,7 @@ import { behaviorReply } from "../../../lib/behavior-engine";
 import { qualityReply, qualityGuidance } from "../../../lib/quality-engine";
 import { detectCompassMode, compassGuidance } from "../../../lib/compass";
 import { detectIntelligenceIntent, intentLabel, superBrainGuidance } from "../../../lib/intelligence-platform";
+import { naturalIntelligenceReply, naturalIntelligenceGuidance, postProcessNaturalResponse } from "../../../lib/natural-intelligence";
 
 type ChatMessage = { role: "user" | "assistant" | "system"; content: string };
 
@@ -253,6 +254,21 @@ export async function POST(req: Request) {
       });
     }
 
+    // V71 Natural Intelligence Layer : micro-intentions, silence persistant,
+    // solitude, identité/orientation et dialogue naturel avant les anciens moteurs.
+    const natural = naturalIntelligenceReply(latestUser, messages);
+    if (natural?.shouldIntercept) {
+      return NextResponse.json({
+        content: natural.content,
+        provider: "nimbray-local",
+        model: "v71-natural-intelligence-layer",
+        intent: natural.intent,
+        responseMode: "auto",
+        fallbackUsed: false,
+        sourcesUsed: []
+      });
+    }
+
     // V37 Emotional Variation Engine : les émotions simples, conflits, micro-dialogues,
     // humour, empathie et prudence sont traités localement avant Groq.
     const behavior = behaviorReply(latestUser);
@@ -260,7 +276,7 @@ export async function POST(req: Request) {
       return NextResponse.json({
         content: behavior.content,
         provider: "nimbray-local",
-        model: "v70-intelligence-platform-human-engine",
+        model: "v71-natural-human-engine",
         intent: behavior.intent,
         responseMode: "auto",
         fallbackUsed: false,
@@ -274,7 +290,7 @@ export async function POST(req: Request) {
       return NextResponse.json({
         content: quality.content,
         provider: "nimbray-local",
-        model: "v70-intelligence-platform-quality-engine",
+        model: "v71-natural-quality-engine",
         intent: quality.intent,
         responseMode: "auto",
         fallbackUsed: false,
@@ -290,7 +306,7 @@ export async function POST(req: Request) {
       return NextResponse.json({
         content: localBrain.content,
         provider: "nimbray-local",
-        model: "v70-intelligence-platform-local-brain",
+        model: "v71-natural-local-brain",
         intent: localBrain.intent,
         responseMode: "auto",
         fallbackUsed: false,
@@ -304,7 +320,7 @@ export async function POST(req: Request) {
       return NextResponse.json({
         content: localPractical || localKnowledge || localMicroReply(latestUser),
         provider: "nimbray-local",
-        model: "v70-intelligence-platform-local-router",
+        model: "v71-natural-local-router",
         intent: isMicroDialogue(latestUser) ? "micro-dialogue" : "local-practical",
         responseMode: "auto",
         fallbackUsed: false,
@@ -321,9 +337,10 @@ export async function POST(req: Request) {
     const contextUseful = sourceRequested || ["document", "research"].includes(conversationIntent) || ["document", "research", "super_brain", "project"].includes(platformIntent) || latestUser.length > 260;
     const { context, sources } = contextUseful ? await buildContext(latestUser, userKnowledge) : { context: "", sources: [] as any[] };
     const guidance = `${conversationGuidance(conversationIntent, responseMode)}
+${naturalIntelligenceGuidance()}
 ${safetyGuidanceForPrompt()}
 Sécurité détectée : ${safety.category}. ${safety.guidance}
-V70 Intelligence, Sources, Memory & Projects Platform : réponse directe, naturelle, fiable et humaine. Priorité aux moteurs locaux consolidés avant Groq. Groq seulement si nécessaire. Sources invisibles sauf demande explicite. Pas de JSON technique. Intent platform détecté : ${intentLabel(platformIntent)}. ${platformIntent === "super_brain" ? `Super Brain : ${superBrainGuidance().join(" ; ")}.` : ""} ${compassGuidance(compassMode)} ${qualityGuidance(latestUser)}`;
+V71 Natural Intelligence Layer, Sources, Memory & Projects Platform : réponse directe, naturelle, fiable et humaine. Priorité aux moteurs locaux consolidés avant Groq. Groq seulement si nécessaire. Sources invisibles sauf demande explicite. Pas de JSON technique. Intent platform détecté : ${intentLabel(platformIntent)}. ${platformIntent === "super_brain" ? `Super Brain : ${superBrainGuidance().join(" ; ")}.` : ""} ${compassGuidance(compassMode)} ${qualityGuidance(latestUser)}`;
     const systemPrompt = buildSystemPrompt(memory.slice(0, 5), context, guidance);
     const provider = (process.env.AI_PROVIDER || "demo").toLowerCase();
 
@@ -331,7 +348,7 @@ V70 Intelligence, Sources, Memory & Projects Platform : réponse directe, nature
     if (provider === "ollama") result = await ollamaReply(messages, systemPrompt, latestUser);
     else if (provider === "groq") result = await groqReply(messages, systemPrompt);
     else if (provider === "openrouter") result = await openRouterReply(messages, systemPrompt);
-    else result = { content: demoReply(messages, memory, userKnowledge.length > 0, responseMode, conversationIntent), model: "nimbray-demo-engine-v70", intent: conversationIntent };
+    else result = { content: demoReply(messages, memory, userKnowledge.length > 0, responseMode, conversationIntent), model: "nimbray-demo-engine-v71", intent: conversationIntent };
 
     const showSources = wantsSources(latestUser);
     const cleanSources = showSources
@@ -342,7 +359,7 @@ V70 Intelligence, Sources, Memory & Projects Platform : réponse directe, nature
       : [];
 
     return NextResponse.json({
-      content: result.content,
+      content: postProcessNaturalResponse(result.content, latestUser, messages),
       provider,
       model: result.model,
       intent: result.intent || platformIntent || conversationIntent || null,

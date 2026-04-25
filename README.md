@@ -1,4 +1,22 @@
-# NimbrayAI V70 — Intelligence, Sources, Memory & Projects Platform
+# NimbrayAI V71 — Natural Intelligence Layer
+
+Version majeure basée sur V70, pensée pour améliorer le cœur conversationnel avant les grosses évolutions plateforme.
+
+## Ajouts V71
+
+- couche `natural-intelligence` pour les micro-intentions ;
+- silence persistant mieux respecté ;
+- réponses plus humaines aux messages courts ;
+- meilleure gestion de la solitude et des confidences ;
+- meilleure gestion des questions d’identité/orientation ;
+- consignes V71 injectées dans le prompt système ;
+- post-traitement anti-formules robotiques.
+
+## Déploiement Vercel
+
+Déploie cette version en preview avant production, puis compare les mêmes conversations avec la V70.
+
+# NimbrayAI V71 — Intelligence, Sources, Memory & Projects Platform
 
 V70 est une grosse version de bloc après V60. Elle rapproche NimbrayAI d’une vraie plateforme d’intelligence personnelle et professionnelle.
 
@@ -34,7 +52,7 @@ npx tsc --noEmit
 
 ```bash
 git add .
-git commit -m "NimbrayAI V70 intelligence memory projects"
+git commit -m "NimbrayAI V71 intelligence memory projects"
 git push
 ```
 
