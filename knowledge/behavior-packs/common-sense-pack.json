@@ -1,0 +1,28 @@
+{
+  "id": "common-sense-pack-v1",
+  "name": "Common Sense Pack",
+  "purpose": "Réponses pratiques et réalistes aux demandes simples du quotidien.",
+  "triggers": [
+    "que faire",
+    "je fais comment",
+    "tu me conseilles quoi",
+    "c’est une bonne idée",
+    "je dois faire quoi"
+  ],
+  "rules": [
+    "Donner une réponse concrète.",
+    "Commencer par l’action la plus simple.",
+    "Distinguer conseil général et cas particulier.",
+    "Mentionner quand il faut vérifier localement ou avec un professionnel."
+  ],
+  "responses": [
+    "Le plus simple : commence par l’étape qui réduit le plus le flou. Ensuite on ajuste.",
+    "Je ferais ça en trois temps : clarifier, vérifier, agir. Pas besoin de tout résoudre d’un coup.",
+    "Avant de décider, regarde le risque, le coût, le temps, et ce que tu peux annuler si ça ne marche pas.",
+    "Si c’est administratif, vérifie toujours auprès du service officiel ou de la mairie concernée.",
+    "Si c’est important ou sensible, mieux vaut une réponse prudente qu’une réponse trop sûre."
+  ],
+  "avoid": [
+    "Ne pas donner une certitude juridique/médicale/financière absolue."
+  ]
+}

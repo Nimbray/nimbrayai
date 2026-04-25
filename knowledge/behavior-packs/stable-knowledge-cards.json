@@ -1,0 +1,217 @@
+{
+  "id": "stable-knowledge-cards-v1",
+  "name": "Stable Knowledge Cards",
+  "cards": [
+    {
+      "title": "Pourquoi le ciel est bleu",
+      "category": "science",
+      "summary": "Diffusion de Rayleigh",
+      "content": "Le ciel paraît bleu parce que les molécules de l’air diffusent davantage les courtes longueurs d’onde de la lumière solaire, notamment le bleu. Au coucher du soleil, la lumière traverse plus d’atmosphère et les teintes rouges/orangées deviennent plus visibles.",
+      "keywords": [
+        "ciel",
+        "bleu",
+        "rayleigh",
+        "lumière"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Pourquoi la mer est salée",
+      "category": "science",
+      "summary": "Origine du sel marin",
+      "content": "La mer est salée car l’eau de pluie dissout des minéraux dans les roches. Les rivières transportent ces sels vers les océans, où ils s’accumulent avec le temps.",
+      "keywords": [
+        "mer",
+        "sel",
+        "océan",
+        "minéraux"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Déclarer un décès en France",
+      "category": "administration",
+      "summary": "Démarches décès",
+      "content": "En France, un décès doit être constaté par un médecin puis déclaré à la mairie du lieu du décès. La mairie établit l’acte de décès. Les pompes funèbres peuvent accompagner les démarches.",
+      "keywords": [
+        "décès",
+        "mairie",
+        "état civil",
+        "obsèques"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Porter plainte",
+      "category": "justice",
+      "summary": "Plainte et menace",
+      "content": "En cas d’infraction ou de menace, on peut contacter la police/gendarmerie, déposer plainte, garder les preuves et éviter l’escalade. En danger immédiat, appeler le 17 ou le 112.",
+      "keywords": [
+        "plainte",
+        "police",
+        "menace",
+        "preuves"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Héritage en France",
+      "category": "justice",
+      "summary": "Notaire et succession",
+      "content": "Lors d’une succession, le notaire identifie les héritiers, vérifie le testament éventuel, estime le patrimoine et accompagne les démarches. Les règles varient selon la situation familiale.",
+      "keywords": [
+        "héritage",
+        "succession",
+        "notaire"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Règles du basket",
+      "category": "sport",
+      "summary": "Bases du basket",
+      "content": "Le basket oppose deux équipes qui cherchent à marquer dans le panier adverse. Un panier vaut 2 ou 3 points selon la distance, 1 point sur lancer franc. Les fautes et les violations structurent le jeu.",
+      "keywords": [
+        "basket",
+        "sport",
+        "règles"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Règle du hors-jeu",
+      "category": "sport",
+      "summary": "Football hors-jeu",
+      "content": "Au football, un joueur est généralement hors-jeu s’il est plus proche de la ligne de but adverse que le ballon et l’avant-dernier défenseur au moment où un coéquipier lui joue le ballon, et s’il participe à l’action.",
+      "keywords": [
+        "football",
+        "hors-jeu"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Familles de langues",
+      "category": "langues",
+      "summary": "Langues du monde",
+      "content": "Les langues peuvent être regroupées en familles : indo-européenne, sino-tibétaine, afro-asiatique, nigéro-congolaise, austronésienne, etc. Une famille regroupe des langues ayant une origine commune.",
+      "keywords": [
+        "langues",
+        "familles",
+        "monde"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Culture japonaise et coréenne",
+      "category": "culture",
+      "summary": "Nuances culturelles",
+      "content": "Le Japon et la Corée ont des histoires, langues, traditions et systèmes sociaux distincts. Il faut éviter les clichés et comparer avec prudence : cuisine, rapports sociaux, arts, histoire et modernité diffèrent.",
+      "keywords": [
+        "japon",
+        "corée",
+        "culture"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Phishing",
+      "category": "cybersecurite",
+      "summary": "Reconnaître un mail frauduleux",
+      "content": "Un mail de phishing pousse souvent à agir vite, contient un lien suspect, une pièce jointe inattendue ou une demande d’identifiants. Vérifier l’expéditeur, ne pas cliquer, aller directement sur le site officiel.",
+      "keywords": [
+        "phishing",
+        "mail",
+        "sécurité"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Budget personnel",
+      "category": "vie_quotidienne",
+      "summary": "Gérer un budget",
+      "content": "Un budget simple suit les revenus, les charges fixes, les dépenses variables et l’épargne. Commencer par noter les dépenses pendant un mois permet d’identifier les priorités.",
+      "keywords": [
+        "budget",
+        "argent",
+        "dépenses"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Manque de confiance",
+      "category": "psychologie_generale",
+      "summary": "Confiance en soi",
+      "content": "La confiance se construit par petites preuves répétées. Se fixer des objectifs réalistes, noter les progrès et éviter la comparaison permanente aide à reprendre appui.",
+      "keywords": [
+        "confiance",
+        "motivation"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Recette jambon",
+      "category": "cuisine",
+      "summary": "Quiche jambon fromage",
+      "content": "Une recette simple : pâte brisée, jambon, œufs, lait/crème, fromage râpé, sel, poivre. Cuire environ 35 minutes à 180°C. Ajouter oignons ou herbes selon goût.",
+      "keywords": [
+        "jambon",
+        "quiche",
+        "fromage"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Blague simple",
+      "category": "humour",
+      "summary": "Humour sûr",
+      "content": "Pourquoi les plongeurs plongent-ils toujours en arrière ? Parce que sinon ils tombent dans le bateau.",
+      "keywords": [
+        "blague",
+        "humour"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    },
+    {
+      "title": "Identité NimbrayAI",
+      "category": "nimbrayai",
+      "summary": "Style et mission",
+      "content": "NimbrayAI est un assistant joyeux, utile, humain et sûr. Il doit répondre simplement, être chaleureux, rester pro, et devenir sérieux face aux situations sensibles.",
+      "keywords": [
+        "nimbrayai",
+        "identité",
+        "style"
+      ],
+      "level": "simple",
+      "reliability": "general_stable",
+      "sensitivity": "normal"
+    }
+  ]
+}

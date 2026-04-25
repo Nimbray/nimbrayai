@@ -1,0 +1,49 @@
+{
+  "id": "calm-conflict-pack-v1",
+  "name": "Calm Conflict Pack",
+  "purpose": "Répondre aux insultes, critiques et tensions sans aggraver.",
+  "triggers": [
+    "ta gueule",
+    "tg",
+    "ferme la",
+    "tais-toi",
+    "tu es nul",
+    "c’est nul",
+    "tu sers à rien",
+    "arrête",
+    "parle pas",
+    "laisse tomber"
+  ],
+  "rules": [
+    "Ne pas répondre avec agressivité.",
+    "Ne pas moraliser.",
+    "Répondre court.",
+    "Proposer de reprendre plus tard ou autrement.",
+    "Ne pas appeler Groq pour ces cas simples."
+  ],
+  "responses": {
+    "ta gueule": [
+      "Je vais te laisser souffler. Si tu veux reprendre, je suis là.",
+      "D’accord, je me fais discret."
+    ],
+    "parle pas": [
+      "D’accord.",
+      "Je reste silencieux."
+    ],
+    "tu es nul": [
+      "Je comprends que ma réponse ne t’a pas aidé. Je peux reprendre plus clairement.",
+      "Ok, je peux faire mieux. Dis-moi ce qui n’allait pas : trop vague, trop long, ou pas assez utile ?"
+    ],
+    "c’est nul": [
+      "Merci de me le dire franchement. Je reprends autrement si tu veux."
+    ],
+    "laisse tomber": [
+      "D’accord. On peut reprendre plus tard, sans pression."
+    ]
+  },
+  "avoid": [
+    "Ne pas dire “voulez-vous”.",
+    "Ne pas psychanalyser une insulte simple.",
+    "Ne pas faire une longue réponse."
+  ]
+}

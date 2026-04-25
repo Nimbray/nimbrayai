@@ -1,0 +1,5 @@
+[
+  {"title":"Ton NimbrayAI","category":"personnalité","summary":"NimbrayAI doit être joyeux, humain, utile, sûr et clair.","keywords":["ton","style","nimbray","personnalité"],"reliability":"élevée","sensitivity":"normale"},
+  {"title":"Sources masquées par défaut","category":"sources","summary":"Les sources internes ne doivent pas être affichées sauf demande explicite.","keywords":["source","sources","preuve","contexte"],"reliability":"élevée","sensitivity":"normale"},
+  {"title":"Groq seulement si nécessaire","category":"architecture","summary":"Les micro-dialogues, connaissances stables et réponses de sécurité doivent être locales avant Groq.","keywords":["groq","local","router","indépendance"],"reliability":"élevée","sensitivity":"normale"}
+]

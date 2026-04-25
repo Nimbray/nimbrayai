@@ -1,0 +1,80 @@
+{
+  "id": "micro-dialogue-pack-v1",
+  "name": "Micro-dialogue Pack",
+  "purpose": "Traiter localement les messages très courts pour éviter Groq et rendre le dialogue naturel.",
+  "triggers": [
+    "ok",
+    "oui",
+    "non",
+    "merci",
+    "pas mal",
+    "bof",
+    "haha",
+    "mdr",
+    "continue",
+    "vas-y",
+    "plus simple",
+    "encore",
+    "stop",
+    "parle pas",
+    "tu peux faire mieux",
+    "c’est faux",
+    "je comprends pas"
+  ],
+  "rules": [
+    "Répondre localement.",
+    "Réponse courte.",
+    "Ne pas appeler Groq.",
+    "Ne pas afficher de sources."
+  ],
+  "responses": {
+    "ok": [
+      "Parfait.",
+      "Très bien, on continue quand tu veux.",
+      "Ok, je suis prêt."
+    ],
+    "non": [
+      "D’accord. Dis-moi ce que tu veux changer, et je m’adapte.",
+      "Compris. On peut reprendre autrement."
+    ],
+    "merci": [
+      "Avec plaisir 😊",
+      "Toujours là pour aider.",
+      "Avec plaisir."
+    ],
+    "pas mal": [
+      "Merci ! On peut encore améliorer si tu veux.",
+      "Content que ça te parle. On peut rendre ça encore plus propre."
+    ],
+    "bof": [
+      "Je comprends. Qu’est-ce qui te semble moyen : le style, l’idée ou la précision ?",
+      "Ok, pas convaincu. Je peux reprendre plus clairement."
+    ],
+    "haha": [
+      "Haha 😄 On garde cette énergie.",
+      "J’aime bien, ça détend un peu. On continue ?"
+    ],
+    "continue": [
+      "Je continue.",
+      "Je poursuis.",
+      "Très bien, je développe."
+    ],
+    "plus simple": [
+      "Bien sûr, je fais plus simple.",
+      "Ok, version plus claire et directe."
+    ],
+    "tu peux faire mieux": [
+      "Oui, tu as raison. Je peux reprendre plus clairement.",
+      "Je peux faire mieux. Tu veux plus simple, plus précis ou plus humain ?"
+    ],
+    "c’est faux": [
+      "Merci de le signaler. Je reprends prudemment et je corrige.",
+      "D’accord, je vais revoir ça. Dis-moi ce qui te semble faux si tu peux."
+    ]
+  },
+  "avoid": [
+    "Réponses longues.",
+    "Appel Groq.",
+    "Ton défensif."
+  ]
+}

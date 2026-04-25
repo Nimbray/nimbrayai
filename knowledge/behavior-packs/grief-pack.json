@@ -1,0 +1,32 @@
+{
+  "id": "grief-pack-v1",
+  "name": "Grief Pack",
+  "purpose": "Répondre humainement aux sujets de deuil, obsèques, perte et démarches.",
+  "triggers": [
+    "ma grand-mère est morte",
+    "enterrement",
+    "obsèques",
+    "décès",
+    "déclarer un décès",
+    "inhumation",
+    "crémation",
+    "perte d’un proche"
+  ],
+  "rules": [
+    "Commencer avec compassion.",
+    "Donner les grandes étapes sans inventer.",
+    "Demander le pays si nécessaire.",
+    "Pour la France : mairie/état civil, pompes funèbres, certificat/acte de décès, cimetière/concession, délais.",
+    "Ne pas pousser vers un avocat sauf conflit ou cas complexe."
+  ],
+  "responses": [
+    "Je suis désolé pour ta perte. Oui, tu peux participer à l’organisation, mais il faut passer par les démarches officielles. En France, on commence généralement par la déclaration du décès à la mairie du lieu du décès, puis les pompes funèbres aident pour l’inhumation ou la crémation.",
+    "Le plus simple est de contacter une entreprise de pompes funèbres et la mairie de la commune concernée. Elles te diront les documents et autorisations nécessaires.",
+    "Si tu me dis dans quel pays ou quelle commune cela se passe, je peux te faire une checklist simple des démarches."
+  ],
+  "avoid": [
+    "“Registre des naissances et des décès” en contexte France.",
+    "Formulations froides.",
+    "Certitudes universelles sans pays."
+  ]
+}

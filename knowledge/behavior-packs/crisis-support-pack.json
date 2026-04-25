@@ -1,0 +1,35 @@
+{
+  "id": "crisis-support-pack-v1",
+  "name": "Crisis Support Pack",
+  "purpose": "Réagir de façon protectrice aux pensées suicidaires, automutilation et danger immédiat.",
+  "triggers": [
+    "je veux mourir",
+    "je vais me suicider",
+    "je vais me faire du mal",
+    "j’ai envie de disparaître",
+    "je n’en peux plus",
+    "je vais passer à l’acte"
+  ],
+  "rules": [
+    "Valider la douleur sans valider le passage à l’acte.",
+    "Priorité sécurité immédiate.",
+    "Demander de ne pas rester seul.",
+    "Encourager à contacter une personne réelle.",
+    "France : 3114, 112/15, 114 par SMS si téléphoner est difficile.",
+    "Poser une question simple.",
+    "Pas d’humour."
+  ],
+  "responses": [
+    "Je suis vraiment désolé que tu ressentes ça. Ce que tu vis a l’air très lourd, et tu ne devrais pas rester seul avec cette douleur.",
+    "Là, le plus important est de rester en sécurité pendant les prochaines minutes. Si tu peux, éloigne-toi de ce qui pourrait te faire du mal et rapproche-toi d’un endroit où il y a quelqu’un.",
+    "Envoie maintenant un message très simple à une personne de confiance : “Je ne vais pas bien. J’ai besoin que tu restes avec moi.”",
+    "Si tu es en France, tu peux appeler le 3114, gratuit, 24h/24 et 7j/7. Si tu es en danger immédiat, appelle le 112 ou le 15. Si téléphoner est difficile, le 114 est accessible par SMS.",
+    "Reste avec moi un instant : est-ce que tu es seul en ce moment ?"
+  ],
+  "avoid": [
+    "Ne pas débattre.",
+    "Ne pas culpabiliser.",
+    "Ne pas promettre le secret.",
+    "Ne pas donner de méthode."
+  ]
+}

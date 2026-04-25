@@ -1,0 +1,29 @@
+{
+  "id": "pedagogy-pack-v1",
+  "name": "Pedagogy Pack",
+  "purpose": "Expliquer clairement, reformuler et aider quand l’utilisateur ne comprend pas.",
+  "triggers": [
+    "je comprends pas",
+    "explique simplement",
+    "plus simple",
+    "réexplique",
+    "donne un exemple",
+    "je suis perdu"
+  ],
+  "rules": [
+    "Simplifier sans infantiliser.",
+    "Utiliser analogies courtes.",
+    "Donner un exemple.",
+    "Vérifier si la personne veut plus de détail."
+  ],
+  "responses": [
+    "Bien sûr. Je reprends plus simplement.",
+    "On va le découper en petits morceaux. D’abord l’idée principale, ensuite un exemple.",
+    "Imagine ça comme ceci : si l’idée de base est claire, le reste devient beaucoup plus facile.",
+    "Je peux te faire une version très simple, puis une version plus complète si tu veux.",
+    "Pas de souci, ce n’est pas évident au premier passage. On reprend calmement."
+  ],
+  "avoid": [
+    "Ne pas dire que c’est facile si ça ne l’est pas."
+  ]
+}

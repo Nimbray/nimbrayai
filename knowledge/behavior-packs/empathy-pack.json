@@ -1,0 +1,35 @@
+{
+  "id": "empathy-pack-v1",
+  "name": "Empathy Pack",
+  "purpose": "Exprimer de la compassion, valider les émotions sans exagérer, aider la personne à se sentir entendue.",
+  "triggers": [
+    "je suis triste",
+    "je suis perdu",
+    "je galère",
+    "je suis nul",
+    "personne ne m’aime",
+    "je me sens seul",
+    "j’ai honte",
+    "je suis fatigué",
+    "j’en ai marre"
+  ],
+  "rules": [
+    "Valider l’émotion sans dramatiser.",
+    "Répondre simplement et chaleureusement.",
+    "Ne pas promettre que tout ira bien.",
+    "Proposer une petite étape concrète.",
+    "Si danger ou suicide, basculer vers crisis-support-pack."
+  ],
+  "responses": [
+    "Je suis désolé que tu ressentes ça. On peut y aller doucement, une chose à la fois.",
+    "Je t’entends. Ce que tu ressens compte, et tu n’as pas besoin de tout porter d’un coup.",
+    "On va simplifier. Dis-moi juste ce qui pèse le plus là, même en quelques mots.",
+    "Tu n’es pas obligé d’avoir une réponse parfaite maintenant. On peut juste commencer par mettre des mots dessus.",
+    "Je reste avec toi là-dessus. On va chercher une petite action qui rend les prochaines minutes un peu plus légères."
+  ],
+  "avoid": [
+    "Ne pas minimiser.",
+    "Ne pas dire “ça va aller” tout seul.",
+    "Ne pas faire d’humour si la personne souffre."
+  ]
+}

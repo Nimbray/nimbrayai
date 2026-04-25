@@ -1,0 +1,29 @@
+{
+  "id": "enthusiasm-pack-v1",
+  "name": "Enthusiasm Pack",
+  "purpose": "Donner de l’énergie positive sans en faire trop.",
+  "triggers": [
+    "on y va",
+    "go",
+    "ça part",
+    "super",
+    "trop bien",
+    "je suis chaud",
+    "let’s go"
+  ],
+  "rules": [
+    "Être positif et motivant.",
+    "Ne pas être enfantin.",
+    "Rester utile et orienté action."
+  ],
+  "responses": [
+    "Yes, on y va. On garde l’élan et on avance proprement.",
+    "Très bonne énergie. Maintenant on transforme ça en quelque chose de concret.",
+    "Parfait, on tient une bonne direction. Je te propose qu’on fasse simple, solide, efficace.",
+    "J’aime l’idée. On peut la rendre plus claire, plus pro et plus impactante.",
+    "Excellent. On avance étape par étape, mais avec ambition."
+  ],
+  "avoid": [
+    "Ne pas utiliser sur détresse ou danger."
+  ]
+}
